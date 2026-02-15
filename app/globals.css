@@ -5,22 +5,64 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  --color-zodiac-25: #f6faff;
+  --color-zodiac-50: #f0f7fe;
+  --color-zodiac-100: #ddecfc;
+  --color-zodiac-200: #c2dffb;
+  --color-zodiac-300: #99ccf7;
+  --color-zodiac-400: #68b1f2;
+  --color-zodiac-500: #4591ec;
+  --color-zodiac-600: #2f75e1;
+  --color-zodiac-700: #2760ce;
+  --color-zodiac-800: #264ea7;
+  --color-zodiac-900: #244584;
+  --color-zodiac-950: #19294d;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-inter: var(--font-inter);
+  --font-urbanist: var(--font-urbanist);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+}
+
+@layer base {
+  :root {
+    --font-h1: clamp(2.5rem, 5vw, 4rem);
+    --font-h2: clamp(1.75rem, 4vw, 3rem);
+    --font-h3: clamp(1.25rem, 3vw, 2rem);
+    --font-h4: clamp(1.125rem, 2vw, 1.5rem);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-urbanist text-slate-900;
+    text-wrap: balance;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1 {
+    @apply leading-[1.1] font-extrabold tracking-[-.03em];
+    font-size: var(--font-h1);
+  }
+
+  h2 {
+    @apply leading-[1.2] font-bold tracking-[-.02em];
+    font-size: var(--font-h2);
+  }
+
+  h3 {
+    @apply leading-[1.3] font-semibold tracking-tight;
+    font-size: var(--font-h3);
+  }
+
+  h4 {
+    @apply leading-[1.4] font-medium;
+    font-size: var(--font-h4);
+  }
 }
