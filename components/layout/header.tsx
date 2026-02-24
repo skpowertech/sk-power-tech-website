@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { navItems } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import CTAButton from "./cta-button";
+import CTAButton from "../ui/cta-button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,9 +31,9 @@ const Header = () => {
   return (
     <header
       ref={menuRef}
-      className="sticky top-0 z-50 w-full bg-white/80 shadow-md backdrop-blur-md"
+      className="bg-zodiac-50 sticky top-0 z-50 w-full shadow-md backdrop-blur-md"
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 shadow-sm">
+      <nav className="max-container flex items-center justify-between px-6 py-4">
         <Link href={"/"}>
           <Image
             src="/logo.svg"
@@ -60,8 +60,8 @@ const Header = () => {
           ))}
         </ul>
         <div className="hidden items-center gap-4 lg:flex">
-          <CTAButton variant={"outline"}></CTAButton>
-          <CTAButton variant={"filled"}></CTAButton>
+          <CTAButton variant={"outline_dark"} size={"sm"}></CTAButton>
+          <CTAButton variant={"filled"} size={"sm"}></CTAButton>
         </div>
 
         {/* Mobile Menu Button */}
@@ -94,7 +94,7 @@ const Header = () => {
         </button>
       </nav>
       <div
-        className={`bg-zodiac-25 duration-all absolute top-full left-0 z-40 flex h-fit w-full justify-center py-6 shadow-lg backdrop-blur-sm transition-opacity ease-in md:hidden ${isMenuOpen ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none translate-y-0 opacity-0"}`}
+        className={`bg-zodiac-50 duration-all absolute top-full left-0 z-40 flex h-fit w-full justify-center py-6 shadow-lg backdrop-blur-sm transition-opacity ease-in md:hidden ${isMenuOpen ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none translate-y-0 opacity-0"}`}
       >
         <ul className="flex flex-col gap-4">
           {navItems.map((item) => (
