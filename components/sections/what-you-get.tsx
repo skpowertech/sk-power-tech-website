@@ -10,7 +10,7 @@ const WhatYouGet = () => {
         title="Everything You Need for Reliable Surveillance"
         description="Essential features designed to protect your business — from theft deterrence and mobile monitoring to fast installation and dependable local support."
       ></SectionHeader>
-      <ul className="grid gap-6 md:grid-cols-2 w-fit mx-0 md:mx-auto justify-items-center">
+      <ul className="grid gap-6 md:grid-cols-2 w-fit mx-0 sm:mx-auto">
         {features.map((feature) => (
           <li key={feature.title}>
             <FeatureCard

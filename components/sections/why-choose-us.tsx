@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
         title="Why Our Customers Choose Us"
         description="We deliver dependable CCTV solutions backed by expert installation, fast support, and proven reliability — protecting homes and businesses with confidence."
       ></SectionHeader> 
-      <ul className="grid gap-6 md:grid-cols-2 w-fit mx-0 md:mx-auto ">
+      <ul className="grid gap-6 md:grid-cols-2 w-fit mx-0 sm:mx-auto ">
         {stats.map((stat) => (
           <li key={stat.label}>
             <StatCard

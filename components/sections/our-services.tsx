@@ -1,6 +1,7 @@
 import { services } from "@/lib/constants"
 import SectionHeader from "../ui/section-header"
 import ServiceCard from "../ui/service-card"
+import Card from "../ui/card"
 
 const OurServices = () => {
   return (
@@ -10,10 +11,10 @@ const OurServices = () => {
         title={'Security & Technical Solutions We Provide'}
         description={'We specialize in professional CCTV installation and surveillance systems, supported by complementary services that enhance safety, control, and operational reliability.'}
       ></SectionHeader>
-      <ul className="grid grid-cols-[repeat(auto-fit,minmax(280px,320px))] justify-center gap-8" >
+      <ul className="grid grid-cols-[repeat(auto-fit,minmax(280px,320px))] sm:justify-center gap-8" >
         {services.map((service) => (
           <li key={service.title} className="h-full">
-            <ServiceCard {...service}></ServiceCard>
+            <Card {...service}></Card>
           </li>
         ))}
       </ul>
