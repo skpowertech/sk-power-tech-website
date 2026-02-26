@@ -1,6 +1,5 @@
 import { services } from "@/lib/constants"
 import SectionHeader from "../ui/section-header"
-import ServiceCard from "../ui/service-card"
 import Card from "../ui/card"
 
 const OurServices = () => {
