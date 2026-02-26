@@ -95,6 +95,89 @@ export const services = [
     tags: ['Power Systems', 'Maintenance'],
     title: 'Electrical Support', 
     description: 'Installation and maintenance support for power distribution and system infrastructure.'
-  },
-  
+  }, 
 ]
+
+export const adaptableSolutions = [
+  {
+    imageSrc: '/solutions/retail-store.png',
+    imageAlt: 'Retail store image',
+    title: 'Retail Shops',
+    description: 'Inventory protection and customer monitoring tailored to store layouts and traffic patterns.'
+  },
+  {
+    imageSrc: '/solutions/office.png',
+    imageAlt: 'Office image',
+    title: 'Offices',
+    description: 'Access and surveillance configured for employee safety and asset protection.'
+  },
+  {
+    imageSrc: '/solutions/restaurant.png',
+    imageAlt: 'Restaurant Image',
+    title: 'Restaurants',
+    description: 'Coverage designed for kitchens, storage, and customer-facing areas.'
+  },
+  {
+    imageSrc: '/solutions/warehouse.png',
+    imageAlt: 'Warehouse Image',
+    title: 'Warehouses',
+    description: 'Wide-area monitoring solutions optimized for inventory movement and scale.'
+  },
+   
+]
+
+export const processes = [
+  {
+    step: '01',
+    title: 'Free Site Visit & Analysis', 
+    description: 'We assess your premises, risk points and coverage needs to recommend the right surveillance setup.',
+    iconSrc: '/icons/location-icon-white.png',
+    iconAlt: 'location icon'
+  },
+  {
+    step: '02',
+    title: 'Installation & Setup', 
+    description: 'Professional installation, system configuration, and mobile monitoring setup — ready to use immediately.',
+    iconSrc: '/icons/tool-icon-white.png',
+    iconAlt: 'location icon'
+  },
+  {
+    step: '03',
+    title: 'Ongoing Service & Support', 
+    description: 'Regular maintenance and quick support to ensure your system runs reliably at all times.',
+    iconSrc: '/icons/headset-icon-white.png',
+    iconAlt: 'location icon'
+  },
+
+] 
+
+export const ourWorks = [
+  {
+    imageSrc: '/our-work/thandhi-tv-office.jpg', 
+    imageAlt: 'Thandhi Tv Office Image', 
+    title: 'Integrated Security System Deployment', 
+    description: 'End-to-end installation of IP cameras with access control, fire alarm, and public address systems for workplace safety and monitoring.',
+    tags: ['CCTV', 'Access Control'],
+    location: 'Thanthi TV Office - Perungudi, Chennai',
+    href: '/our-work'
+  },
+  {
+    imageSrc: '/our-work/byjus.jpg', 
+    imageAlt: 'Byjus Tution Centre Image', 
+    title: 'Enterprise Network Infrastructure Setup', 
+    description: 'Installation and testing of 120 networking points to support reliable connectivity across classrooms and operational areas.',
+    tags: ['Networking', 'Infrastructure'],
+    location: 'BYJU’S Tution Centre - Trichy',
+    href: '/our-work'
+  },
+  {
+    imageSrc: '/our-work/power-tech-engineers.png', 
+    imageAlt: 'Power Tech Engineers HT/LT Electrical System Installation Image', 
+    title: 'HT/LT Electrical System Commissioning', 
+    description: 'Transformer installation, panel setup, and cable routing for high-capacity industrial electrical distribution.',
+    tags: ['Electrical', 'Industrial'],
+    location: 'Power Tech Engineering - Porur, Chennai',
+    href: '/our-work'
+  },
+]
+
