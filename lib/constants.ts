@@ -181,3 +181,16 @@ export const ourWorks = [
   },
 ]
 
+export const about = {
+  badge: 'Licensed & Compliant',
+  title: 'Certified Engineering Execution You Can Rely On',
+  description: 'S.K. Power Tech is an electrical engineering firm established in 2018, delivering consultancy, installation, testing, and commissioning services across power, instrumentation, surveillance, and industrial electrification projects. Our team manages the complete lifecycle — from requirement analysis to execution, maintenance, and troubleshooting — ensuring dependable performance across commercial and industrial environments.',
+  highlights: [
+    'Installation, Erection & Commissioning Expertise',
+    'CCTV, Fire Alarm & Access Systems Integration',
+    'HT/LT Electrical Infrastructure Execution',
+    'Annual Maintenance for Industrial & Commercial Sites'
+  ],
+  imageSrc: '/about/about-section-img.png',
+  imageAlt: 'About section image',
+}

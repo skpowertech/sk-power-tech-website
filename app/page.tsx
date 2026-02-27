@@ -5,6 +5,8 @@ import OurServices from "@/components/sections/our-services";
 import OurWork from "@/components/sections/our-work";
 import AdaptableSolutions from "@/components/sections/adaptable-solutions";
 import Process from "@/components/sections/process";
+import AboutSection from "@/components/sections/about-section";
+import { about } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -16,6 +18,7 @@ export default function Home() {
       <AdaptableSolutions/>
       <Process/>
       <OurWork/>
+      <AboutSection {...about}/>
     </div>
   );
 }
