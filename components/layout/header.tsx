@@ -36,7 +36,7 @@ const Header = () => {
       <nav className="max-container flex items-center justify-between px-6 py-4">
         <Link href={"/"}>
           <Image
-            src="/logo.svg"
+            src="/logos/logo.svg"
             alt="main-logo"
             width={200}
             height={200}
@@ -60,8 +60,8 @@ const Header = () => {
           ))}
         </ul>
         <div className="hidden items-center gap-4 lg:flex">
-          <CTAButton variant={"outline_dark"} size={"sm"}></CTAButton>
-          <CTAButton variant={"filled"} size={"sm"}></CTAButton>
+            <CTAButton variant={'filled'} label={'Whatsapp'} size={'sm'} ></CTAButton>
+            <CTAButton variant={'outline_dark'} label="Call Now" desktopLabel="+91 82204 99784" size={'sm'} ></CTAButton>
         </div>
 
         {/* Mobile Menu Button */}
