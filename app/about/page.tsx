@@ -1,4 +1,4 @@
-import ComingSoonPage from '@/components/layout/coming-soon'
+import ComingSoonPage from "@/components/layout/coming-soon";
 
 const AboutPage = () => {
   return (
@@ -6,7 +6,7 @@ const AboutPage = () => {
       pageTitle="About Us"
       description="Detailed information about our company, expertise, and certifications will be available soon."
     />
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

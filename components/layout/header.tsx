@@ -60,8 +60,17 @@ const Header = () => {
           ))}
         </ul>
         <div className="hidden items-center gap-4 lg:flex">
-            <CTAButton variant={'filled'} label={'Whatsapp'} size={'sm'} ></CTAButton>
-            <CTAButton variant={'outline_dark'} label="Call Now" desktopLabel="+91 82204 99784" size={'sm'} ></CTAButton>
+          <CTAButton
+            variant={"filled"}
+            label={"Whatsapp"}
+            size={"sm"}
+          ></CTAButton>
+          <CTAButton
+            variant={"outline_dark"}
+            label="Call Now"
+            desktopLabel="+91 82204 99784"
+            size={"sm"}
+          ></CTAButton>
         </div>
 
         {/* Mobile Menu Button */}

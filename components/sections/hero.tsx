@@ -33,8 +33,12 @@ const Hero = () => {
             you can trust.
           </p>
           <div className="xs:flex-row flex flex-col gap-4">
-            <CTAButton variant={'filled'} label={'Whatsapp'} ></CTAButton>
-            <CTAButton variant={'outline'} label="Call Now" desktopLabel="+91 82204 99784" ></CTAButton>
+            <CTAButton variant={"filled"} label={"Whatsapp"}></CTAButton>
+            <CTAButton
+              variant={"outline"}
+              label="Call Now"
+              desktopLabel="+91 82204 99784"
+            ></CTAButton>
           </div>
         </div>
       </div>

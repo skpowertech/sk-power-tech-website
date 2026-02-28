@@ -19,31 +19,29 @@ export default function ComingSoonPage({
   return (
     <main
       className={cn(
-        "min-h-[70vh] flex items-center justify-center px-6 py-20 bg-zodiac-25",
-        className
+        "bg-zodiac-25 flex min-h-[70vh] items-center justify-center px-6 py-20",
+        className,
       )}
     >
-      <div className="text-center max-w-xl mx-auto">
-        
-        <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-zodiac-900">
+      <div className="mx-auto max-w-xl text-center">
+        <h1 className="text-zodiac-900 text-3xl font-semibold tracking-tight md:text-4xl">
           {pageTitle}
         </h1>
 
-        <div className="w-16 h-0.5 bg-zodiac-600 mx-auto my-6 rounded-full" />
+        <div className="bg-zodiac-600 mx-auto my-6 h-0.5 w-16 rounded-full" />
 
-        <p className="text-zodiac-700 text-base md:text-lg leading-relaxed">
+        <p className="text-zodiac-700 text-base leading-relaxed md:text-lg">
           {description}
         </p>
 
         <div className="mt-10">
           <Link
             href={backHref}
-            className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg border border-zodiac-600 text-zodiac-600 hover:bg-zodiac-600 hover:text-white transition-colors duration-200"
+            className="border-zodiac-600 text-zodiac-600 hover:bg-zodiac-600 inline-flex items-center justify-center rounded-lg border px-6 py-3 text-sm font-medium transition-colors duration-200 hover:text-white"
           >
             Back to Home
           </Link>
         </div>
-
       </div>
     </main>
   );

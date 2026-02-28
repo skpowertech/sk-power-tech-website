@@ -1,20 +1,19 @@
 interface SectionHeaderProps {
-  label: string,
-  title: string,
-  description: string
+  label: string;
+  title: string;
+  description: string;
 }
 
-
-const SectionHeader = ({label, title, description}: SectionHeaderProps) => {
+const SectionHeader = ({ label, title, description }: SectionHeaderProps) => {
   return (
-    <div className="flex flex-col gap-4 items-start sm:items-center sm:text-center" >
-      <span className='w-fit uppercase border border-zodiac-400 text-sm font-semibold bg-zodiac-50 text-zodiac-700 px-5 py-2 rounded-full' >
+    <div className="flex flex-col items-start gap-4 sm:items-center sm:text-center">
+      <span className="border-zodiac-400 bg-zodiac-50 text-zodiac-700 w-fit rounded-full border px-5 py-2 text-sm font-semibold uppercase">
         {label}
       </span>
-      <h2 >{title}</h2>
-      <p className="text-zinc-600 max-w-2xl" >{description}</p>
+      <h2>{title}</h2>
+      <p className="max-w-2xl text-zinc-600">{description}</p>
     </div>
-  )
-}
+  );
+};
 
-export default SectionHeader
+export default SectionHeader;

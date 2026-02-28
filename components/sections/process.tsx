@@ -1,16 +1,16 @@
-import SectionHeader from '../ui/section-header'
-import TimelineCard from '../ui/timeline-card'
-import { processes } from '@/lib/constants'
+import { processes } from "@/lib/constants";
+import SectionHeader from "../ui/section-header";
+import TimelineCard from "../ui/timeline-card";
 
 const Process = () => {
   return (
-    <section className='max-container padding space-y-12'>
+    <section className="max-container padding space-y-12">
       <SectionHeader
-        label='Process'
-        title='How We Work'
-        description='Three simple steps from consultation to complete protection'
+        label="Process"
+        title="How We Work"
+        description="Three simple steps from consultation to complete protection"
       ></SectionHeader>
-      <ul className='w-fit mx-0 sm:mx-auto'>
+      <ul className="mx-0 w-fit sm:mx-auto">
         {processes.map((process) => (
           <li key={process.step}>
             <TimelineCard {...process}></TimelineCard>
@@ -18,7 +18,7 @@ const Process = () => {
         ))}
       </ul>
     </section>
-  ) 
-}
+  );
+};
 
-export default Process
+export default Process;
