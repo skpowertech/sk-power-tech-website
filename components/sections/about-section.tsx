@@ -41,7 +41,7 @@ const AboutSection = ({
           </ul>
         </div>
         <div className="max-w-lg order-1 lg:order-2">
-          <Image className="w-full rounded-xl" src={'/about/about-section-img.png'} alt={imageAlt} width={520} height={390} ></Image>
+          <Image className="w-full rounded-xl" src={'/images/about/about-section-img.png'} alt={imageAlt} width={520} height={390} ></Image>
         </div>
       </div>
     </section>
@@ -51,7 +51,7 @@ const AboutSection = ({
 const HighlightItem = ({children}: {children: React.ReactNode}) => {
   return (
     <div className="flex justify-center items-start gap-2">
-      <Image src={'/icons/tick-icon.png'} alt="tick icon" width={16} height={16} className="w-4 h-4 mt-1" ></Image>
+      <Image src={'/icons/ui/tick-icon.png'} alt="tick icon" width={16} height={16} className="w-4 h-4 mt-1" ></Image>
       <span className="text-zinc-500" >{children}</span>
     </div>
   )

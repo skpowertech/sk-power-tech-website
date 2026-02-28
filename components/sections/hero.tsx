@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="relative h-[calc(100vh-54.656px)] md:h-[calc(100vh-56px)] lg:h-[calc(100vh-66px)]">
       <Image
-        src={"/hero-img.jpg"}
+        src={"/images/hero/hero-img.jpg"}
         alt="Technician installing CCTV camera"
         sizes="100vw"
         fill
@@ -13,7 +13,7 @@ const Hero = () => {
         className="hidden object-cover object-[70%_50%] md:block md:object-[100%_50%]"
       ></Image>
       <Image
-        src={"/hero-img-mobile.jpg"}
+        src={"/images/hero/hero-img-mobile.jpg"}
         alt="Technician installing CCTV camera"
         sizes="100vw"
         fill
@@ -33,8 +33,8 @@ const Hero = () => {
             you can trust.
           </p>
           <div className="xs:flex-row flex flex-col gap-4">
-            <CTAButton></CTAButton>
-            <CTAButton variant={"filled"}></CTAButton>
+            <CTAButton variant={'filled'} label={'Whatsapp'} ></CTAButton>
+            <CTAButton variant={'outline'} label="Call Now" desktopLabel="+91 82204 99784" ></CTAButton>
           </div>
         </div>
       </div>

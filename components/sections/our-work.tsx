@@ -19,9 +19,9 @@ const OurWork = () => {
           </li>
         ))}
       </ul>
-      <Link href={'/our-work'} className='mx-auto inline-flex justify-center items-center gap-2 text-base font-inter font-medium tracking-wide transition-colors focus:outline-none  bg-zodiac-950 text-white hover:bg-zodiac-900 px-5 py-2.5 rounded-full'>
+      <Link href={'/projects'} className='mx-auto inline-flex justify-center items-center gap-2 text-base font-inter font-medium tracking-wide transition-colors focus:outline-none  bg-zodiac-950 text-white hover:bg-zodiac-900 px-5 py-2.5 rounded-full'>
         <span>View All Projects</span>
-        <Image src={'/icons/right-arrow-icon.png'} alt='right arrow icon' width={16} height={16} className='w-4 h-4' ></Image>
+        <Image src={'/icons/ui/right-arrow-icon.png'} alt='right arrow icon' width={16} height={16} className='w-4 h-4' ></Image>
       </Link>
     </section>
   )
