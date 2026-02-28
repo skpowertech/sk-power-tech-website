@@ -19,6 +19,14 @@
   --color-zodiac-900: #244584;
   --color-zodiac-950: #19294d;
 
+  --background-image-footer-gradient: linear-gradient(
+    to bottom, 
+    #19294D 0%, 
+    #101C36 45%, 
+    #060B16 75%, 
+    #000000 100%
+  );
+
   --font-inter: var(--font-inter);
   --font-urbanist: var(--font-urbanist);
 
@@ -58,8 +66,7 @@ body {
   }
 
   h3 {
-    @apply leading-[1.3] font-semibold tracking-tight;
-    font-size: var(--font-h3);
+    @apply font-inter leading-[1.3] font-semibold text-lg sm:text-xl md:text-2xl;
   }
 
   h4 {
@@ -102,4 +109,7 @@ body {
   .padding-b {
     @apply pb-12 sm:pb-24;
   }
+
+
+
 }
