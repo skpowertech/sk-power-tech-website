@@ -26,7 +26,7 @@ const Card = ({
       <div className="flex flex-col gap-3 flex-1 py-6 px-4">
         {location && (
           <div className="flex gap-2">
-            <Image className="w-4 h-4 object-contain" src={'/icons/location-icon.png'} alt="location-icon" width={16} height={16} ></Image>
+            <Image className="w-4 h-4 object-contain" src={'/icons/ui/location-icon.png'} alt="location-icon" width={16} height={16} ></Image>
             <span className="text-xs text-zinc-500" >{location}</span>
           </div>
         )}
