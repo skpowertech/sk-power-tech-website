@@ -1,18 +1,22 @@
+'use client'
+
 import { cva, type VariantProps } from "class-variance-authority";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import Toast from "./toast";
+import { useState } from "react";
 
 const ctaVariants = cva(
   "inline-flex justify-center items-center gap-2 text-base font-inter font-medium tracking-wide transition-colors focus:outline-none",
   {
     variants: {
       variant: {
+        filled:
+        "border-[1.5px] bg-zodiac-600 text-white  border-zodiac-500 hover:bg-zodiac-900",
+        outline:
+        "border border-white/50 backdrop-blur  text-zodiac-25 bg-transparent",
         outline_dark:
           "border-[1.5px] border-zodiac-950 text-zodiac-950 bg-transparent hover:bg-zodiac-950/5",
-        filled:
-          "border-[1.5px] bg-zodiac-600 text-white  border-zodiac-500 hover:bg-zodiac-900",
-        outline:
-          "border-[.25px] border-white backdrop-blur  text-zodiac-25 bg-transparent",
       },
 
       size: {
@@ -31,31 +35,30 @@ const ctaVariants = cva(
 
 type CTAButtonProps = VariantProps<typeof ctaVariants> & {
   className?: string;
+  label: string,
+  desktopLabel?: string
 };
 
-const CTAButton = ({ variant, size, className }: CTAButtonProps) => {
+const CTAButton = ({ variant, size, label, desktopLabel, className }: CTAButtonProps) => {
   const encodedMessage = encodeURIComponent(
     "Hi, I would like to know more about your services.",
   );
   const whatsappLink = `https://wa.me/918220499784?text=${encodedMessage}`;
   const config = {
     outline: {
-      icon: "/whatsapp.png",
-      alt: "whatsapp-icon",
-      label: "WhatsApp",
-      href: `${whatsappLink}`,
+      icon: "/icons/contact/phone-icon-light.png",
+      alt: "phone-icon",
+      href: "tel:+918220499784",
     },
     outline_dark: {
-      icon: "/whatsapp.png",
-      alt: "whatsapp-icon",
-      label: "WhatsApp",
-      href: `${whatsappLink}`,
+      icon: "/icons/contact/phone-icon-dark.png",
+      alt: "phone-icon",
+      href: "tel:+918220499784",
     },
     filled: {
-      icon: "/phone-icon.png",
-      alt: "phone-icon",
-      label: "Call Now",
-      href: "tel:+918220499784",
+      icon: "/icons/contact/whatsapp-icon-white.png",
+      alt: "whatsapp-icon",
+      href: `${whatsappLink}`,
     },
   } as const;
 
@@ -68,11 +71,27 @@ const CTAButton = ({ variant, size, className }: CTAButtonProps) => {
   const current = config[variant ?? "outline"];
   const resolvedSize = size ?? "md";
 
+  const [showToast, setShowToast] = useState(false)
+
+  const handleMouseClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if(variant === 'outline' || variant === 'outline_dark') {
+      const isDesktop = window.matchMedia("(min-width:768px)").matches
+      console.log(isDesktop)
+
+      if(isDesktop) {
+        e.preventDefault()
+        navigator.clipboard.writeText("+91 82204 99784")
+        setShowToast(true)
+      }
+    }
+  }
+
   return (
     <a
       href={current.href}
-      target={`${variant === "outline" ? "_blank" : undefined}`}
-      rel={`${variant === "outline" ? "noopener noreferrer" : undefined}`}
+      onClick={handleMouseClick}
+      target={variant === "outline" ? "_blank" : undefined}
+      rel={variant === "outline" ? "noopener noreferrer" : undefined}
       className={cn(ctaVariants({ variant, size }), className)}
     >
       <Image
@@ -82,7 +101,18 @@ const CTAButton = ({ variant, size, className }: CTAButtonProps) => {
         width={iconSizes[resolvedSize]}
         height={iconSizes[resolvedSize]}
       ></Image>
-      <span>{current.label}</span>
+      <span className={desktopLabel ? 'md:hidden' : ''} >
+        {label}
+      </span>
+      {desktopLabel && (
+        <span className="hidden md:inline" >{desktopLabel}</span>
+      )}
+
+      <Toast
+        message="Phone number copied to clipboard"
+        show={showToast}
+        onClose={() => setShowToast(false)}
+      />
     </a>
   );
 };
