@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col gap-6">
           <FooterHeader>Head Office</FooterHeader>
           <address className="hover:text-zodiac-300 text-zodiac-100 cursor-pointer not-italic">
-            <span className="block">#2, Sambasivam Nagar, Vembakkam </span>
+            <span className="block">#2, Sambasivam Nagar, Chinna Vembakkam </span>
             <span className="block">Ponneri, Chennai - 601204</span>
           </address>
         </div>
