@@ -9,7 +9,8 @@ const Hero = () => {
         alt="Technician installing CCTV camera"
         sizes="100vw"
         fill
-        priority
+        preload={true}
+        quality={80}
         className="hidden object-cover object-[70%_50%] md:block md:object-[100%_50%]"
       ></Image>
       <Image
@@ -17,7 +18,8 @@ const Hero = () => {
         alt="Technician installing CCTV camera"
         sizes="100vw"
         fill
-        priority
+        preload={true}
+        quality={80}
         className="block object-cover object-[80%_10%] md:hidden"
       ></Image>
       <div className="absolute inset-0 bg-linear-to-r from-[#020817] via-[#020817]/85 to-transparent"></div>
