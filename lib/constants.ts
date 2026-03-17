@@ -252,3 +252,118 @@ export const contactUs = [
     label: "+91 86677 01177",
   },
 ];
+
+
+export const servicesDetails = [
+  {
+    tabTitle: 'CCTV',
+    title: "CCTV Surveillance Systems",
+    imageSrc: "/images/services/cctv-camera-installation.png",
+    imageAlt: "Technician installing CCTV security camera system",
+    description:
+      "We provide professional CCTV surveillance solutions for commercial, industrial, and residential environments. Our services include system design, installation, configuration, and ongoing support to ensure reliable security monitoring.",
+    features: [
+      "IP & Analog CCTV Camera Installation",
+      "Remote Monitoring Setup",
+      "Network Video Recorder (NVR/DVR) Configuration",
+      "Camera Maintenance & Troubleshooting",
+      "Complete Security Surveillance Solutions"
+    ]
+  },
+
+  {
+    tabTitle: 'Access Control',
+    title: "Biometric & Access Control Systems",
+    imageSrc: "/images/services/biometric-access-control-installation.png",
+    imageAlt: "Biometric access control system installation",
+    description:
+      "Our biometric and access control solutions help organizations manage and monitor entry to restricted areas. We install secure systems that enhance safety and streamline workforce access management.",
+    features: [
+      "Biometric Fingerprint Systems",
+      "RFID & Smart Card Access Systems",
+      "Video Door Phone Installation",
+      "Attendance Management Integration",
+      "Secure Access Monitoring Solutions"
+    ]
+  },
+
+  {
+    tabTitle: 'Fire Safety',
+    title: "Fire Alarm & Public Address Systems",
+    imageSrc: "/images/services/fire-alarm-system-installation.png",
+    imageAlt: "Fire alarm and public address system installation",
+    description:
+      "We install advanced fire detection and public announcement systems to ensure safety in commercial buildings and industrial facilities. Our solutions help in emergency alerts and efficient communication.",
+    features: [
+      "Fire Alarm Detection Systems",
+      "Emergency Alert Systems",
+      "Public Address Speaker Systems",
+      "Building Safety Integration",
+      "Compliance with Safety Standards"
+    ]
+  },
+
+  {
+    tabTitle: 'Electrical',
+    title: "Electrical Installation Services",
+    imageSrc: "/images/services/industrial-electrical-installation.png",
+    imageAlt: "Electrical installation and power distribution work",
+    description:
+      "We provide end-to-end electrical installation services for industrial plants, commercial buildings, and infrastructure projects. Our experienced team ensures safe and efficient electrical system deployment.",
+    features: [
+      "Industrial Electrical Installation",
+      "HT & LT Power Distribution Systems",
+      "Cable Laying & Panel Installation",
+      "Lighting & Power Systems Setup",
+      "Electrical Equipment Installation"
+    ]
+  },
+
+  {
+    tabTitle: 'Networking',
+    title: "Telecommunication Equipment Installation",
+    imageSrc: "/images/services/network-telecommunication-installation.png",
+    imageAlt: "Technician installing telecommunications networking equipment",
+    description:
+      "We deliver reliable telecommunication infrastructure installation services to support modern communication networks in offices, industries, and commercial facilities.",
+    features: [
+      "Structured Network Cabling",
+      "Server Rack Installation",
+      "Communication Equipment Setup",
+      "Data & Network Infrastructure",
+      "Enterprise Connectivity Solutions"
+    ]
+  },
+
+  {
+    tabTitle: 'Testing',
+    title: "Testing & Commissioning",
+    imageSrc: "/images/services/electrical-system-testing.png",
+    imageAlt: "Electrical system testing and commissioning process",
+    description:
+      "Our testing and commissioning services ensure that installed electrical and security systems operate safely, efficiently, and according to industry standards before they are put into operation.",
+    features: [
+      "Electrical System Testing",
+      "Equipment Commissioning",
+      "Performance Verification",
+      "Safety Compliance Checks",
+      "System Troubleshooting"
+    ]
+  },
+
+  {
+    tabTitle: 'Maintenance',
+    title: "Electrical Maintenance Services",
+    imageSrc: "/images/services/electrical-maintenance-inspection.png",
+    imageAlt: "Electrical maintenance work in commercial building",
+    description:
+      "We provide annual maintenance and operational support for electrical systems in industries, commercial complexes, and buildings to ensure uninterrupted performance and reliability.",
+    features: [
+      "Industrial Electrical Maintenance",
+      "Commercial Building Maintenance",
+      "Preventive Maintenance Programs",
+      "Breakdown Support Services",
+      "Operational System Monitoring"
+    ]
+  }
+];
