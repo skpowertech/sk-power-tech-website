@@ -237,17 +237,17 @@ export const quickLinks = [
 
 export const contactUs = [
   {
-    iconSrc: "/icons/contact/mail-icon-outline.png",
+    iconSrc: "/icons/contact/mail-outline.svg",
     iconAlt: "mail icon",
     label: "skpowertech7@gmail.com",
   },
   {
-    iconSrc: "/icons/contact/phone-icon-outline.png",
+    iconSrc: "/icons/contact/phone-outline.svg",
     iconAlt: "phone icon",
     label: "+91 82204 99784",
   },
   {
-    iconSrc: "/icons/contact/mobile-icon-outline.png",
+    iconSrc: "/icons/contact/mobile-outline.svg",
     iconAlt: "mobile icon",
     label: "+91 86677 01177",
   },

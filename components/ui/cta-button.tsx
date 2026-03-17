@@ -52,17 +52,17 @@ const CTAButton = ({
   const whatsappLink = `https://wa.me/918220499784?text=${encodedMessage}`;
   const config = {
     outline: {
-      icon: "/icons/contact/phone-icon-light.png",
+      icon: "/icons/contact/phone-light.svg",
       alt: "phone-icon",
       href: "tel:+918220499784",
     },
     outline_dark: {
-      icon: "/icons/contact/phone-icon-dark.png",
+      icon: "/icons/contact/phone-dark.svg",
       alt: "phone-icon",
       href: "tel:+918220499784",
     },
     filled: {
-      icon: "/icons/contact/whatsapp-icon-white.png",
+      icon: "/icons/contact/whatsapp.svg",
       alt: "whatsapp-icon",
       href: `${whatsappLink}`,
     },

@@ -34,7 +34,7 @@ const Card = ({
           <div className="flex gap-2">
             <Image
               className="h-4 w-4 object-contain"
-              src={"/icons/ui/location-icon.png"}
+              src={"/icons/ui/location-icon.svg"}
               alt="location-icon"
               width={16}
               height={16}
