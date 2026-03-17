@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionHeader from "../ui/section-header";
+import FeatureItem from "../ui/feature-item";
 
 interface AboutSectionProps {
   badge: string;
@@ -35,7 +36,7 @@ const AboutSection = ({
           <ul className="space-y-2">
             {highlights.map((highlight) => (
               <li key={highlight} className="flex">
-                <HighlightItem>{highlight}</HighlightItem>
+                <FeatureItem>{highlight}</FeatureItem>
               </li>
             ))}
           </ul>
@@ -54,19 +55,6 @@ const AboutSection = ({
   );
 };
 
-const HighlightItem = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className="flex items-start justify-center gap-2">
-      <Image
-        src={"/icons/ui/tick-icon.png"}
-        alt="tick icon"
-        width={16}
-        height={16}
-        className="mt-1 h-4 w-4"
-      ></Image>
-      <span className="text-zinc-500">{children}</span>
-    </div>
-  );
-};
+
 
 export default AboutSection;
